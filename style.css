@@ -12,18 +12,61 @@
 }
 
 #navbar{
+    width:100%;
+    height:25%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 3vw;
+    padding: 1.5vw 2.5vw;
 }
+
+#logo-div{
+    width:12.5%;
+    height:75%;
+    position: relative;
+    /* background: none; */
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#logo-part-1{
+    font-size: 2vw;
+    color:#FE330A;
+    z-index: 9;
+    background: none;  
+}
+
+#logo-part-2{
+    margin-top: -2vh;
+    font-size: 2.8vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    z-index: 9;
+    position:relative ;
+    background: none;    
+}
+
+#logo-div::after{
+    content:"";
+    width:30%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left:5.5vw;
+    bottom:10%;
+    background-color: #FE330A;
+    border-radius: 50%;
+    z-index: 1;
+}
+
 #nav-items-div{
     display:flex;
     align-items: center;
     gap:1vw;
-    font-size: 1.2vw;
-   
+    font-size: 1.2vw;   
 }
+
 .navitems{
     border:1px solid rgba(0, 0, 0, 0.153);
     border-radius: 50px;;
@@ -31,6 +74,7 @@
     position: relative;
     overflow: hidden;
 }
+
 .navitems::after{
     content:"";
     width:100%;
@@ -43,11 +87,12 @@
     transition: all ease 0.5s;
     z-index: 1;
 }
+
 .navitems:hover::after{
     bottom:0;
-    border-radius: 0;
-  
+    border-radius: 0;  
 }
+
 .navitems a{
     text-decoration: none;
     color:black;
@@ -56,10 +101,9 @@
     background: none;
     transition: all ease 0.5s;
 }
+
 .navitems:hover a{
     color:white;
-    /* background-color: black; */
-    
 }
 
 /* 
