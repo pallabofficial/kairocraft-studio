@@ -9,6 +9,7 @@
 #page-1 {
   width: 100%;
   min-height: 100vh;
+  position: relative;
 }
 
 #navbar {
@@ -213,10 +214,71 @@
     text-transform: uppercase;
     text-align: right;
 }
+#animation{
+  position: absolute;
+  right:0;
+  top:45%;
+  width:50vw;
+  height:80vh;
+  background-color: #FE350B;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter:blur(1vw);
+}
+.animes{
+  width:100%;
+  height:100%;
+ 
+  background-color: #FE350B;
+
+  filter:blur(1vw);
+  position: absolute;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+#anime1{
+
+ 
+  animation: anime1 3s linear infinite alternate;
+
+}
+#anime2{
+  background: linear-gradient(to top right ,#FE350B, #fe540b);
+  animation: anime2 3s linear infinite alternate;
+}
+#anime3{
+  background: linear-gradient(to bottom right ,#FE350B, #fe890b);
+  animation: anime3 3s linear infinite alternate;
+}
+@keyframes anime1{
+  from{
+    transform: translate(-20%, -10%);
+  }
+  to{
+    transform: translate(0, 0);
+  }
+}
+@keyframes anime2{
+  from{
+    transform: translate(10%, -25%);
+  }
+  to{
+    transform: translate(0, -10%);
+  }
+}
+@keyframes anime3{
+  from{
+    transform: translate(0, 20%);
+  }
+  to{
+    transform: translate(-5%, 10%);
+  }
+}
 #banner-video{
     width:95%;
     margin:10vh 2.5vw;
     border-radius: 10px;
+    position: relative;
     /* margin-left: 10vw;; */
 }
 
