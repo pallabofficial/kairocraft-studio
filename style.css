@@ -2,8 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #efeae3;
+  
   font-family: "Roboto", sans-serif;
+}
+#main{
+  background-color: #efeae3;
+  
 }
 /* -----------------------------------------page-1-navbar-------------------------------------------- */
 #page-1 {
@@ -74,6 +78,7 @@
   padding: 0.8vw 1.5vw;
   position: relative;
   overflow: hidden;
+  
 }
 
 .navitems::after {
@@ -231,7 +236,7 @@
  
   background-color: #FE350B;
 
-  filter:blur(1vw);
+  /* filter:blur(1vw); */
   position: absolute;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -244,7 +249,7 @@
 }
 #anime2{
   background: linear-gradient(to top right ,#FE350B, #fe540b);
-  animation: anime2 3s linear infinite alternate;
+  animation: anime2 8s linear infinite alternate;
 }
 #anime3{
   background: linear-gradient(to bottom right ,#FE350B, #fe890b);
@@ -259,12 +264,22 @@
   }
 }
 @keyframes anime2{
-  from{
-    transform: translate(10%, -25%);
+  0%{
+    transform: translate(20%, 0);
   }
-  to{
-    transform: translate(0, -10%);
+  25%{
+    transform: translate(50%, -25%);
   }
+  50%{
+    transform: translate(50%, -15%);
+  }
+  75%{
+    transform: translate(40%, -25%);
+  }
+  100%{
+    transform: translate(20%, 0);
+  }
+  
 }
 @keyframes anime3{
   from{
